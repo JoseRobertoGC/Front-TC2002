@@ -1,6 +1,7 @@
-.Name{
-    color: white;
+.Name {
+    font-family: "Poppins", sans-serif;
+    color: black;
 }
 .Image{
-    width:30%;
+    width:50%;
 }
