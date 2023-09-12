@@ -68,8 +68,8 @@ function Busqueda(props:BusquedaProps){
 
             </div>
             <div>
-                <Button variant="outlined" className="Button" onClick={props.searchPokemon}>Buscar</Button>
-                <Button variant="outlined" className="Button" onClick={clearBusqueda}>Borrar</Button>
+                <Button variant="outlined" className="Button1" onClick={props.searchPokemon}>Buscar</Button>
+                <Button variant="outlined" className="Button1" onClick={clearBusqueda}>Borrar</Button>
             </div>
         </div>
 
