@@ -2,10 +2,20 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import Item from '@mui/material/Grid';
 import "./Busqueda.css"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-function Busqueda(){
+interface BusquedaProps{
+    changePokemonId:(id:number)=>void;
+    searchPokemon:()=>void;
+}
+
+function Busqueda(props:BusquedaProps){
     const [busqueda,setBusqueda]=useState("");
+
+    useEffect(()=>{
+        console.log("Cambio el valor de busqueda y ahora es "+busqueda)
+        props.changePokemonId(parseInt(busqueda))
+    },[busqueda])
 
     function addToBusqueda(value:string){
         setBusqueda(busqueda+value);
@@ -58,7 +68,7 @@ function Busqueda(){
 
             </div>
             <div>
-                <Button variant="outlined" className="Button">Buscar</Button>
+                <Button variant="outlined" className="Button" onClick={props.searchPokemon}>Buscar</Button>
                 <Button variant="outlined" className="Button" onClick={clearBusqueda}>Borrar</Button>
             </div>
         </div>
