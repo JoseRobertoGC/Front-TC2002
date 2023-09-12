@@ -35,34 +35,34 @@ function Busqueda(props:BusquedaProps){
             <div>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("1")}>1</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("1")}>1</Button>
                 </Grid>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("2")}>2</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("2")}>2</Button>
                 </Grid>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("3")}>3</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("3")}>3</Button>
                 </Grid>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("4")}>4</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("4")}>4</Button>
                 </Grid>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("5")}>5</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("5")}>5</Button>
                 </Grid>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("6")}>6</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("6")}>6</Button>
                 </Grid>
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("7")}>7</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("7")}>7</Button>
                 </Grid> 
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("8")}>8</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("8")}>8</Button>
                 </Grid> 
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("9")}>9</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("9")}>9</Button>
                 </Grid> 
                 <Grid item xs={columnSize}>
-                    <Button className="Button" onClick={()=>addToBusqueda("0")}>0</Button>
+                    <Button variant="contained" className="Button" onClick={()=>addToBusqueda("0")}>0</Button>
                 </Grid>                                               
             </Grid>
 
