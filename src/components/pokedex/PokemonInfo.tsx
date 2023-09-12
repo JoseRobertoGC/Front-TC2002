@@ -38,6 +38,7 @@ function PokemonInfo(props:PokemonInfoProps) {
         setValue(newValue);
     };
     return (
+
         <div>
             <h1 className="Name">{props.pokemon.name}</h1>
             <img className="Image" src={props.pokemon.sprites.other["official-artwork"].front_default}></img>
@@ -66,7 +67,9 @@ function PokemonInfo(props:PokemonInfoProps) {
                 </div>
             </CustomTabPanel>
         </div>
+        
     )
 }
 
 export default PokemonInfo;
+
