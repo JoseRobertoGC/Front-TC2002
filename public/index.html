@@ -25,8 +25,28 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <style>
+      .Header {
+          display: flex;
+          justify-content: center; /* Centra horizontalmente */
+          align-items: center; /* Centra verticalmente */
+          background-color: #0078d4; /* Color de fondo del encabezado */
+          color: white; /* Color del texto en el encabezado */
+          padding: 0px; /* Espaciado interno */
+      }
+
+      .Header img {
+          max-width: 500px; /* Ancho máximo de la imagen */
+          height: auto; /* Altura automática para mantener la proporción */
+      }
+    </style>
+
   </head>
   <body>
+    <header class="Header">
+      <img src="/Pokemon.png" alt="Logo" class="Header-image" />
+    </header>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
